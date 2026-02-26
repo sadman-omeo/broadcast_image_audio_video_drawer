@@ -60,7 +60,7 @@ class _CustomInputScreenState extends State<CustomInputScreen> {
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text("Message sending..."),
+                        content: Text("Message sent"),
                       ),
                     );
                   }

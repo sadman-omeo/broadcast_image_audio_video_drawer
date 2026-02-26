@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+import 'screens/broadcast_option_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -71,7 +73,20 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Drawer(
         child: ListView(
           children: [
-            ListTile(title: Text("Broadcast"), titleTextStyle: TextStyle(color: Colors.red, fontSize: 20, fontWeight: FontWeight.bold)),
+            //broadcast
+            ListTile(
+              title: Text("Broadcast"),
+              titleTextStyle: TextStyle(color: Colors.red, fontSize: 20, fontWeight: FontWeight.bold),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BroadcastOptionScreen(),
+                  ),
+                );
+              }
+            ),
+            //image scale
             ListTile(title: Text("Image Scale"), titleTextStyle: TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold)),
             ListTile(title: Text("Video"), titleTextStyle: TextStyle(color: Colors.green, fontSize: 20, fontWeight: FontWeight.bold)),
             ListTile(title: Text("Audio"),titleTextStyle: TextStyle(color: Colors.purple, fontSize: 20, fontWeight: FontWeight.bold)),

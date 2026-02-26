@@ -70,7 +70,7 @@ class _BroadcastOptionScreenState extends State<BroadcastOptionScreen> {
                   );
                 }
               },
-              child: Text("Proceed"),
+              child: Text("Proceed", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
           ],
         ),

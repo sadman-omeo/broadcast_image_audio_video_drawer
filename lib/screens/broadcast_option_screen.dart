@@ -22,7 +22,8 @@ class _BroadcastOptionScreenState extends State<BroadcastOptionScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("Broadcast Options")
+          title: Text("Broadcast Options"),
+          backgroundColor: Colors.green,
       ),
 
       body: Padding(

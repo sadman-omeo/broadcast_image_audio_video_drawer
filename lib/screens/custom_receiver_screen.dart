@@ -14,6 +14,7 @@ class CustomReceiverScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Custom Broadcast Receiver"),
+        backgroundColor: Colors.green,
       ),
       body: Center(
         child: Padding(

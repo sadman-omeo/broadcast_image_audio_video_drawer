@@ -29,6 +29,7 @@ class _CustomInputScreenState extends State<CustomInputScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Custom Broadcast Input"),
+        backgroundColor: Colors.green,
       ),
       body: Padding(
         padding: EdgeInsets.all(20),

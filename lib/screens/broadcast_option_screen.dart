@@ -31,6 +31,8 @@ class _BroadcastOptionScreenState extends State<BroadcastOptionScreen> {
         child: Column(
           children: [
 
+            SizedBox(height: 20,),
+            Text("Select Broadcast type: ", style: TextStyle(fontSize:15),),
 
             SizedBox(height: 30),
 

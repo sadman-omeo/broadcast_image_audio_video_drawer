@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'screens/broadcast_option_screen.dart';
 
 import 'screens/video_screen.dart';
+import 'screens/audio_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -121,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => VideoScreen(),
+                          builder: (context) => AudioScreen(),
                       ),
                   );
                 },

@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 
 
 
-class CustomInputScreen extends StatefulWidget {
-  const CustomInputScreen({super.key});
+class VideoScreen extends StatefulWidget {
+  const VideoScreen({super.key});
 
   @override
-  State<CustomInputScreen> createState() => _CustomInputScreenState();
+  State<VideoScreen> createState() => _VideoScreenState();
 
 }
 
 
 
-class _CustomInputScreenState extends State<CustomInputScreen> {
+class _VideoScreenState extends State<VideoScreen> {
 
 
 

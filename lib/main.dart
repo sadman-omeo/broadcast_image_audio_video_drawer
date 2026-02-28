@@ -1,8 +1,11 @@
 import 'dart:ui';
 
+import 'package:broadcast_image_audio_video_drawer/screens/image_scale_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/broadcast_option_screen.dart';
+
+import 'screens/video_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -87,8 +90,30 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             ),
             //image scale
-            ListTile(title: Text("Image Scale"), titleTextStyle: TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold)),
-            ListTile(title: Text("Video"), titleTextStyle: TextStyle(color: Colors.green, fontSize: 20, fontWeight: FontWeight.bold)),
+            ListTile(
+                title: Text("Image Scale"),
+                titleTextStyle: TextStyle(color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ImageScaleScreen(),
+                      )
+                  );
+                },
+            ),
+            ListTile(
+                title: Text("Video"),
+                titleTextStyle: TextStyle(color: Colors.green, fontSize: 20, fontWeight: FontWeight.bold),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => VideoScreen(),
+                      ),
+                  );
+                },
+            ),
             ListTile(title: Text("Audio"),titleTextStyle: TextStyle(color: Colors.purple, fontSize: 20, fontWeight: FontWeight.bold)),
           ],
         ),

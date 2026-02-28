@@ -114,7 +114,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
             ),
-            ListTile(title: Text("Audio"),titleTextStyle: TextStyle(color: Colors.purple, fontSize: 20, fontWeight: FontWeight.bold)),
+            ListTile(
+                title: Text("Audio"),
+                titleTextStyle: TextStyle(color: Colors.purple, fontSize: 20, fontWeight: FontWeight.bold),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => VideoScreen(),
+                      ),
+                  );
+                },
+            ),
           ],
         ),
       ),
